@@ -1,0 +1,13 @@
+{
+    "name": "ziad/api-plugin",
+    "description": "WordPress API Plugin with Gutenberg Blocks",
+    "type": "wordpress-plugin",
+    "autoload": {
+        "psr-4": {
+            "Ziad\\APIPlugin\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=7.4"
+    }
+}

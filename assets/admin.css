@@ -1,0 +1,85 @@
+/**
+ * Admin Page Styles
+ */
+
+.ziad-api-admin-container {
+  margin-top: 20px;
+}
+
+.ziad-api-controls {
+  margin-bottom: 20px;
+  padding: 15px;
+  background: #fff;
+  border: 1px solid #ccd0d4;
+  border-radius: 4px;
+}
+
+.ziad-api-controls button {
+  margin-right: 10px;
+}
+
+#ziad-last-updated {
+  color: #666;
+  font-size: 13px;
+  font-style: italic;
+}
+
+.ziad-api-content {
+  background: #fff;
+  padding: 20px;
+  border: 1px solid #ccd0d4;
+  border-radius: 4px;
+}
+
+#ziad-api-data-table {
+  margin-top: 15px;
+}
+
+#ziad-api-data-table.ziad-api-loading {
+  text-align: center;
+  padding: 40px;
+  color: #666;
+}
+
+#ziad-api-data-table table {
+  margin-top: 15px;
+}
+
+#ziad-api-data-table th {
+  font-weight: 600;
+  text-align: left;
+  padding: 12px;
+  background: #f9f9f9;
+}
+
+#ziad-api-data-table td {
+  padding: 10px 12px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+#ziad-api-data-table tr:hover {
+  background-color: #f6f7f7;
+}
+
+/* Spinner */
+.ziad-api-loading .spinner {
+  float: none;
+  margin: 0 auto 10px;
+  display: block;
+}
+
+/* Responsive */
+@media screen and (max-width: 782px) {
+  .ziad-api-controls {
+    padding: 10px;
+  }
+
+  #ziad-api-data-table table {
+    font-size: 13px;
+  }
+
+  #ziad-api-data-table th,
+  #ziad-api-data-table td {
+    padding: 8px;
+  }
+}

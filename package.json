@@ -1,0 +1,16 @@
+{
+  "name": "ziad-api-plugin",
+  "version": "1.0.0",
+  "main": "index.js",
+  "description": "Ziad Mazloum API Challenge Plugin",
+  "scripts": {
+    "build": "wp-scripts build",
+    "start": "wp-scripts start"
+  },
+  "keywords": [],
+  "author": "Ziad Mazloum",
+  "license": "ISC",
+  "devDependencies": {
+    "@wordpress/scripts": "^30.25.0"
+  }
+}

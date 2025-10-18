@@ -1,0 +1,50 @@
+.ziad-api-block-editor {
+    min-height: 100px;
+}
+
+.ziad-api-block-editor h3 {
+    color: #1e1e1e;
+    font-size: 1.2em;
+}
+
+/* Frontend styles */
+.wp-block-ziad-api-plugin-data-table {
+    margin: 20px 0;
+}
+
+.wp-block-ziad-api-plugin-data-table h2 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+#ziad-api-data-table {
+    width: 100%;
+}
+
+#ziad-api-data-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#ziad-api-data-table th,
+#ziad-api-data-table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+#ziad-api-data-table th {
+    background-color: #f0f0f0;
+    font-weight: bold;
+}
+
+#ziad-api-data-table tr:hover {
+    background-color: #f9f9f9;
+}
+
+.ziad-api-loading {
+    padding: 20px;
+    text-align: center;
+    background: #f0f0f0;
+    border-radius: 4px;
+}
