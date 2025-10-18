@@ -37,7 +37,7 @@ A WordPress plugin that retrieves data from an external API and displays it in a
 
 ### CLI Command
 ```bash
-wp ziad refresh-data
+wp ziad-api refresh
 ```
 
 ## File Structure
@@ -70,7 +70,3 @@ ziad-api-plugin/
 - WordPress Gutenberg (Block Editor)
 - AJAX & Transients API
 - Composer
-
-## Author
-
-Ziad
