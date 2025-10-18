@@ -18,12 +18,6 @@ A WordPress plugin that retrieves data from an external API and displays it in a
 - WordPress 5.8+
 - PHP 7.4+
 
-## Installation
-
-1. Upload plugin files to `/wp-content/plugins/ziad-api-plugin/`
-2. Run `composer install` in the plugin directory
-3. Activate through WordPress admin
-
 ## Usage
 
 ### Add Block to Page
