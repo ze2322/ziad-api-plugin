@@ -11,7 +11,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "Ziad\APIPlugin\\": "src/"
+            "Ziad\\APIPlugin\\": "src/"
         }
     },
     "require": {
