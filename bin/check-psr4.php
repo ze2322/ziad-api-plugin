@@ -23,7 +23,7 @@ $files = new RegexIterator(
 );
 
 foreach ($files as $file) {
-    $path     = str_replace('\', '/', $file->getPathname());
+    $path     = str_replace('\\', '/', $file->getPathname());
     $contents = file_get_contents($path);
 
     if (!preg_match('/^namespace\s+([^;]+);/m', $contents, $matches)) {
@@ -38,8 +38,8 @@ foreach ($files as $file) {
         continue;
     }
 
-    $relative = trim(substr($namespace, strlen($prefix)), '\');
-    $expected = rtrim(str_replace('\', '/', $baseDir . '/' . $relative), '/');
+    $relative = trim(substr($namespace, strlen($prefix)), '\\');
+    $expected = rtrim(str_replace('\\', '/', $baseDir . '/' . $relative), '/');
     $actual   = dirname($path);
 
     // Compare the resolved real paths so ../ segments do not cause false hits,
