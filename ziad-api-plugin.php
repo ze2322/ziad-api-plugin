@@ -1,12 +1,13 @@
 <?php
 /**
  * Plugin Name: Ziad API Plugin
- * Plugin URI: http://ziad-api-plugin-site.local/
- * Description: A comprehensive API-based plugin with caching, AJAX, admin page, and Gutenberg blocks
+ * Plugin URI: https://github.com/ze2322/ziad-api-plugin
+ * Description: Fetches data from an external REST API and renders it as a configurable table, via a Gutenberg block, an admin screen and a WP-CLI command. Responses are cached in a transient.
  * Version: 1.0.0
- * Author: Ziad
- * Author URI: http://ziad-api-plugin-site.local/
- * License: GPL v2 or later
+ * Author: Ziad Mazloum Mohammed
+ * Author URI: https://github.com/ze2322
+ * License: MIT
+ * License URI: https://opensource.org/licenses/MIT
  * Text Domain: ziad-api-plugin
  * Domain Path: /languages
  * Requires at least: 5.8
@@ -38,14 +39,6 @@ if (file_exists(ZIAD_API_PLUGIN_DIR . 'vendor/autoload.php')) {
         $file = $base_dir . str_replace('\\', '/', $relative_class) . '.php';
         if (file_exists($file)) require $file;
     });
-}
-
-$block_registrar_file = ZIAD_API_PLUGIN_DIR . 'src/Blocks/BlockRegistrar.php';
-if (file_exists($block_registrar_file)) {
-    require_once $block_registrar_file;
-    error_log('Ziad API Plugin: BlockRegistrar loaded manually from: ' . $block_registrar_file);
-} else {
-    error_log('Ziad API Plugin ERROR: BlockRegistrar file does not exist at: ' . $block_registrar_file);
 }
 
 /**
@@ -90,9 +83,6 @@ register_activation_hook(__FILE__, function() {
     
     // Flush rewrite rules
     flush_rewrite_rules();
-    
-    // Log activation
-    error_log('Ziad API Plugin activated');
 });
 
 /**
@@ -104,9 +94,6 @@ register_deactivation_hook(__FILE__, function() {
     
     // Flush rewrite rules
     flush_rewrite_rules();
-    
-    // Log deactivation
-    error_log('Ziad API Plugin deactivated');
 });
 
 /**

@@ -1,0 +1,17 @@
+# Composer
+/vendor/
+composer.lock
+
+# Node
+/node_modules/
+/build/
+
+# Editors
+.vscode/
+.idea/
+*.swp
+.DS_Store
+
+# WordPress local environment
+wp-config-local.php
+*.log

@@ -1,13 +1,23 @@
 {
     "name": "ziad/api-plugin",
-    "description": "WordPress API Plugin with Gutenberg Blocks",
+    "description": "WordPress plugin that renders an external REST API as a configurable table via a Gutenberg block, an admin screen and a WP-CLI command.",
     "type": "wordpress-plugin",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ziad Mazloum Mohammed",
+            "homepage": "https://github.com/ze2322"
+        }
+    ],
     "autoload": {
         "psr-4": {
-            "Ziad\\APIPlugin\\": "src/"
+            "Ziad\APIPlugin\\": "src/"
         }
     },
     "require": {
         "php": ">=7.4"
+    },
+    "config": {
+        "optimize-autoloader": true
     }
 }
